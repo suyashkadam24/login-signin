@@ -8,7 +8,7 @@ This project is a full-stack application for user authentication. It allows user
 2. [Tech Stack](#tech-stack)
 3. [Setup Instructions](#setup-instructions)
 4. [Environment Variables](#environment-variables)
-5. [Folder Structure](#folder-structure)
+5. [Folder Structure](#folder-structure)    
 6. [API Endpoints](#api-endpoints)
 7. [Screenshots](#screenshots)
 8. [License](#license)
@@ -85,6 +85,19 @@ This project is a full-stack application for user authentication. It allows user
 
 - Open your browser and visit http://localhost:5173.
 
+## API Endpoints
+### POST /signup
+- Description: Registers a new user.
+- Request Body:
+    {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "password": "securepassword"
+    }
+
+- Response:
+- 201: User created successfully.
+- 400: Email already exists.
 
 
 
