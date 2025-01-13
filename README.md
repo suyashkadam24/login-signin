@@ -87,17 +87,39 @@ This project is a full-stack application for user authentication. It allows user
 
 ## API Endpoints
 ### POST /signup
-- Description: Registers a new user.
-- Request Body:
+1. **Description**: Registers a new user.
+2. **Request Body**:
     {
     "name": "John Doe",
     "email": "john.doe@example.com",
     "password": "securepassword"
     }
 
-- Response:
+3. **Response**:
 - 201: User created successfully.
 - 400: Email already exists.
+
+### POST /login
+1. **Description**: Logs in an existing user.
+2. **Request Body**:
+    {
+    "email": "john.doe@example.com",
+    "password": "securepassword"
+    }
+3. **Response**:
+- 200: Success message.
+- 401: Incorrect credentials.
+
+### POST /logout
+1. **Description**: Logs out the user.
+2. **Response**:
+- 200: Logout successful.
+- GET /user
+3. **Description**: Fetches the current user's session.
+4. **Response**:
+- 200: User session details.
+- 401: Not authenticated.
+
 
 
 
